@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sudipta Chowdhury | Software Engineer</title>
+<meta name="description" content="Sudipta Chowdhury is a mobile software engineer (B.Sc. in CSE, CUET) with research experience in augmented reality and a teaching background in programming and algorithms. Open to research and teaching assistantships and industry roles.">
+<meta name="author" content="Sudipta Chowdhury">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sudipta Chowdhury | Software Engineer">
+<meta property="og:description" content="Mobile software engineer with research experience in augmented reality, mobile computing, and human-computer interaction.">
+<meta name="theme-color" content="#2f4b9b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%232f4b9b'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23fff'%3ESC%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sudipta Chowdhury",
+  "jobTitle": "Software Engineer",
+  "email": "mailto:sudipta.chowdhury.anik@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
+  "alumniOf": "Chittagong University of Engineering & Technology",
+  "worksFor": { "@type": "Organization", "name": "WellDev Bangladesh Ltd." },
+  "sameAs": [
+    "https://github.com/SudiptaAChy",
+    "https://www.linkedin.com/in/sudipta-chy"
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --surface: #ffffff;
+    --ink: #172033;
+    --muted: #556079;
+    --rule: #d8dde7;
+    --accent: #2f4b9b;
+    --accent-ink: #ffffff;
+    --accent-soft: #e8edf9;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, Georgia, "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --side: 17.5rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1420;
+      --surface: #161d2e;
+      --ink: #e6eaf2;
+      --muted: #9ba6bf;
+      --rule: #2a3347;
+      --accent: #8fa8ff;
+      --accent-ink: #0f1420;
+      --accent-soft: #1c2640;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: auto; scroll-padding-top: 1rem; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+  .skip {
+    position: absolute; left: -999px; top: 0;
+    background: var(--accent); color: var(--accent-ink);
+    padding: .5rem .9rem; z-index: 10;
+  }
+  .skip:focus { left: .5rem; top: .5rem; }
+
+  /* Layout: sidebar + content on wide screens, stacked on small ones */
+  .page { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; }
+  .side { padding: 2rem 0 1.25rem; border-bottom: 1px solid var(--rule); }
+  main { padding: 1rem 0 3rem; min-width: 0; }
+
+  @media (min-width: 60rem) {
+    .page { display: grid; grid-template-columns: var(--side) minmax(0, 1fr); column-gap: 4rem; padding: 0 2rem; }
+    .side {
+      position: sticky; top: 0; align-self: start;
+      height: 100vh; overflow-y: auto;
+      padding: 3rem 0 2rem; border-bottom: 0;
+      display: flex; flex-direction: column;
+    }
+    main { padding: 3rem 0 4rem; }
+  }
+
+  /* Sidebar */
+  .photo {
+    display: block; width: 100%; max-width: 15rem;
+    aspect-ratio: 4 / 5; object-fit: cover; object-position: center top;
+    border: 1px solid var(--rule); border-radius: 4px;
+    background: var(--accent-soft);
+    margin: 0 0 1.25rem;
+  }
+  @media (min-width: 60rem) {
+    .photo { max-width: none; max-height: 34vh; min-height: 11rem; }
+  }
+  .name { font-family: var(--serif); font-size: 1.75rem; line-height: 1.15; margin: 0; font-weight: 700; letter-spacing: -0.01em; }
+  .role { margin: .5rem 0 0; color: var(--muted); font-size: .95rem; }
+  .place { margin: .25rem 0 0; color: var(--muted); font-size: .9rem; }
+
+  nav[aria-label="Sections"] { margin-top: 1.5rem; }
+  nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .25rem .25rem; }
+  nav a {
+    display: block; padding: .3rem .65rem; border-radius: 4px;
+    color: var(--ink); text-decoration: none; font-size: .95rem;
+    border: 1px solid transparent;
+  }
+  nav a:hover { background: var(--accent-soft); }
+  @media (min-width: 60rem) {
+    nav ul { flex-direction: column; gap: .1rem; }
+    nav a { padding: .3rem .6rem; margin-left: -.6rem; }
+  }
+
+  /* Sections */
+  section { padding: 2rem 0; border-top: 1px solid var(--rule); }
+  section:first-child { border-top: 0; padding-top: 0; }
+  h2 { font-family: var(--serif); font-size: 1.5rem; line-height: 1.25; margin: 0 0 1rem; letter-spacing: -0.005em; }
+  h3 { font-size: 1.05rem; line-height: 1.35; margin: 0; }
+  p { margin: 0 0 1rem; max-width: 68ch; }
+  ul.plain { margin: .5rem 0 0; padding-left: 1.2rem; max-width: 68ch; }
+  ul.plain li { margin: .3rem 0; }
+
+  .lead { font-family: var(--serif); font-size: 1.3rem; line-height: 1.5; max-width: 40rem; }
+  .status {
+    display: inline-block; margin: .25rem 0 0; padding: .45rem .8rem;
+    background: var(--accent-soft); border-left: 4px solid var(--accent);
+    font-size: .95rem; max-width: 68ch;
+  }
+
+  .btns { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.25rem 0 0; }
+  .btn {
+    display: inline-block; padding: .55rem 1rem; border-radius: 4px;
+    border: 1px solid var(--accent); text-decoration: none; font-weight: 600; font-size: .95rem;
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); }
+  .btn.secondary { background: transparent; color: var(--accent); }
+  .btn:hover { filter: brightness(1.08); }
+
+  /* Research interests */
+  .interests { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+  @media (min-width: 40rem) { .interests { grid-template-columns: repeat(3, 1fr); } }
+  .interest { padding-left: .9rem; border-left: 3px solid var(--accent); }
+  .interest p { margin: .3rem 0 0; font-size: .95rem; color: var(--muted); }
+
+  /* Thesis */
+  .paper { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 1.25rem; }
+  .paper h3 { font-family: var(--serif); font-size: 1.25rem; }
+  .meta { color: var(--muted); font-size: .92rem; margin: .35rem 0 1rem; }
+  .facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; margin: 1.25rem 0; border: 1px solid var(--rule); border-radius: 4px; }
+  @media (min-width: 40rem) { .facts { grid-template-columns: repeat(4, 1fr); } }
+  .fact { padding: .8rem 1rem; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .fact:nth-child(2n) { border-right: 0; }
+  .fact:nth-last-child(-n+2) { border-bottom: 0; }
+  @media (min-width: 40rem) {
+    .fact { border-bottom: 0; }
+    .fact:nth-child(2n) { border-right: 1px solid var(--rule); }
+    .fact:last-child { border-right: 0; }
+  }
+  .fact dt { font-family: var(--serif); font-size: 1.6rem; font-weight: 700; line-height: 1.1; }
+  .fact dd { margin: .2rem 0 0; font-size: .85rem; color: var(--muted); line-height: 1.35; }
+  .paper h4 { font-size: .98rem; margin: 1.1rem 0 .2rem; }
+
+  /* Timeline-style lists */
+  .entry { display: grid; gap: .25rem 2rem; padding: 1.1rem 0; border-top: 1px solid var(--rule); }
+  .entry:first-of-type { border-top: 0; padding-top: 0; }
+  @media (min-width: 40rem) { .entry { grid-template-columns: 9.5rem minmax(0, 1fr); } }
+  .when { color: var(--muted); font-size: .9rem; }
+  .org { color: var(--muted); font-size: .95rem; margin: .1rem 0 .4rem; }
+  .stack { font-size: .88rem; color: var(--muted); margin: .5rem 0 0; }
+  .sub { margin: 1.25rem 0 .1rem; font-weight: 600; font-size: .95rem; }
+  .sub:first-child { margin-top: 0; }
+
+  /* Skills */
+  .skills { margin: 0; display: grid; gap: .6rem 2rem; grid-template-columns: 1fr; }
+  @media (min-width: 40rem) { .skills { grid-template-columns: 11.5rem minmax(0, 1fr); } }
+  .skills dt { font-weight: 600; }
+  .skills dd { margin: 0 0 .4rem; color: var(--ink); }
+  @media (min-width: 40rem) { .skills dd { margin: 0; } }
+
+  footer { padding: 1.5rem 0 2.5rem; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--rule); }
+
+  @media print {
+    .side nav, .skip, .btns { display: none; }
+    .page { display: block; }
+    .side { position: static; height: auto; }
+    body { background: #fff; color: #000; }
+  }
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="page">
+
+  <header class="side">
+    <div>
+      <img class="photo" src="assets/profile.png" width="400" height="500"
+           alt="Portrait of Sudipta Chowdhury" onerror="this.style.display='none'">
+      <h1 class="name">Sudipta Chowdhury</h1>
+      <p class="role">Software Engineer, mobile systems</p>
+      <p class="place">Dhaka, Bangladesh</p>
+    </div>
+
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#thesis">Thesis</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#honors">Honors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <p class="lead">I build reliable mobile software and I am drawn to problems where interactive systems meet people: augmented reality, mobile computing, and human-computer interaction.</p>
+      <p>I am a software engineer with more than four years of industry experience building native Android and iOS apps, from fintech and sales products in Bangladesh to SaaS products for public transportation companies in Switzerland and Germany. I hold a B.Sc. in Computer Science and Engineering from Chittagong University of Engineering and Technology (CUET), where my thesis built an AR virtual try-on system with a hybrid recommender for online shopping.</p>
+      <p>I have also taught: I have tutored school students in mathematics, physics, and ICT, and undergraduate-level programming, data structures, and algorithms. At work I mentor interns and help interview trainee candidates.</p>
+      <p class="status">I am looking for graduate research and teaching assistantship opportunities.</p>
+      <div class="btns">
+        <a class="btn primary" href="assets/Sudipta_Chowdhury_CV.pdf">Download CV</a>
+        <a class="btn secondary" href="mailto:sudipta.chowdhury.anik@gmail.com">Send an email</a>
+      </div>
+    </section>
+
+    <section id="research" aria-labelledby="research-h">
+      <h2 id="research-h">Research interests</h2>
+      <div class="interests">
+        <div class="interest">
+          <h3>Augmented and virtual reality</h3>
+          <p>Face tracking, real-time 3D rendering, and immersive experiences on commodity phones.</p>
+        </div>
+        <div class="interest">
+          <h3>Mobile computing</h3>
+          <p>Resource-efficient mobile systems, and architectures that stay fast, reliable, and testable.</p>
+        </div>
+        <div class="interest">
+          <h3>Human-computer interaction</h3>
+          <p>Interfaces that make complex systems easy for people to understand and use.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="thesis" aria-labelledby="thesis-h">
+      <h2 id="thesis-h">Research experience: undergraduate thesis</h2>
+      <article class="paper">
+        <h3>Development of an AR-based online shopping system for wearable products</h3>
+        <p class="meta">B.Sc. thesis, Department of CSE, CUET, July 2023. Supervised by Md. Sabir Hossain, Assistant Professor.</p>
+
+        <p>Shoppers cannot try on fashion items online, which drives high return rates. I built an Android shopping app where users try products on live through the front camera, and where a recommender suggests other items to try next. The system covers eyeglasses, caps and hats, and jewellery, so that one interface handles several product categories.</p>
+
+        <dl class="facts">
+          <div class="fact"><dt>91</dt><dd>3D product models collected and prepared</dd></div>
+          <div class="fact"><dt>38,949</dt><dd>purchase records in the transaction data</dd></div>
+          <div class="fact"><dt>579</dt><dd>users in the recommender evaluation</dd></div>
+          <div class="fact"><dt>0.63</dt><dd>mean absolute error (RMSE 1.00)</dd></div>
+        </dl>
+
+        <h4>Augmented try-on</h4>
+        <p>The try-on screen uses Unity3D AR Foundation with the ARCore Augmented Faces API. The 468-point face mesh and the center and region poses anchor each 3D model to the face, so glasses sit on the nose bridge, hats on the head, and earrings and nose rings at their landmarks.</p>
+
+        <h4>Hybrid recommendation</h4>
+        <p>Recommendations are a weighted sum of two methods. Content-based filtering applies TF-IDF and cosine similarity to product attributes. User-based collaborative filtering uses mean-centered purchase counts, Pearson correlation, a similarity threshold of 0.3, and the ten nearest neighbors.</p>
+
+        <h4>System design</h4>
+        <p>A client-server architecture keeps the AR rendering on the device and the recommender on a backend service, connected through an API gateway.</p>
+
+        <h4>Limitations and future work</h4>
+        <p>The transaction history is a custom dataset and the evaluation is offline, so a study with real users is the natural next step. I would also extend try-on to clothing, shoes, and watches, use body measurements for size-aware recommendations, and generate 3D models from 2D photos to reduce manual asset preparation.</p>
+
+        <p class="stack">Tools: Unity3D, Google ARCore SDK, AR Foundation, ARCore Augmented Faces API, Android, Python</p>
+      </article>
+    </section>
+
+    <section id="teaching" aria-labelledby="teaching-h">
+      <h2 id="teaching-h">Teaching experience</h2>
+      <div class="entry">
+        <div class="when">Part-time</div>
+        <div>
+          <h3>Private tutor</h3>
+          <ul class="plain">
+            <li>Tutored Higher Secondary Certificate (HSC) students in mathematics, physics, and Information and Communication Technology (ICT), supporting their learning and examination preparation.</li>
+            <li>Taught undergraduate-level computing topics, including programming languages, data structures, and algorithms, to help students grasp fundamentals and build problem-solving skills.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="when">Apr 2024 to present</div>
+        <div>
+          <h3>Mentoring and interviewing</h3>
+          <p class="org">WellDev Bangladesh Ltd.</p>
+          <ul class="plain">
+            <li>Mentor interns in mobile app development through technical guidance.</li>
+            <li>Run research and knowledge-transfer sessions to introduce new technologies and practices to the team.</li>
+            <li>Conduct technical interviews for trainee recruitment, evaluating programming and problem-solving skills.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" aria-labelledby="exp-h">
+      <h2 id="exp-h">Industry experience</h2>
+
+      <div class="entry">
+        <div class="when">Apr 2024 to present</div>
+        <div>
+          <h3>Software Engineer</h3>
+          <p class="org">WellDev Bangladesh Ltd., Dhaka</p>
+          <ul class="plain">
+            <li>Develop and maintain native Android and iOS apps for SaaS products serving public transportation companies in Switzerland and Germany.</li>
+            <li>Implemented an MQTT-based communication system that replaces paper-based workflows and makes data exchange more reliable.</li>
+            <li>Designed modular, scalable UI components, business logic, and networking layers, reducing development time by about 75 to 85% through reuse.</li>
+            <li>Built Jenkins CI/CD pipelines with Gitleaks security scanning, and added Sentry logging and monitoring.</li>
+            <li>Wrote unit tests and maintain over 95% code coverage.</li>
+            <li>Contributed to business requirement specifications, technical design documents, and delivery roadmaps.</li>
+            <li>Conduct detailed code reviews that promote quality, maintainability, and adherence to standards.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="when">Jul 2022 to Mar 2024</div>
+        <div>
+          <h3>Associate Software Engineer</h3>
+          <p class="org">Brain Station 23, Dhaka</p>
+          <ul class="plain">
+            <li>Developed native Android apps in fintech and sales for products with over 700k downloads and more than BDT 100 million in monthly revenue.</li>
+            <li>Built reusable UI components and screens, optimized business logic, and integrated backend APIs and Firebase services.</li>
+            <li>Implemented bank-to-mobile-wallet transactions, account management, and FAQ modules.</li>
+            <li>Built location-aware merchant discovery with geolocation, map-based visualization, WebSocket-based bidirectional communication, and backend APIs.</li>
+            <li>Designed a sales management dashboard for managers to monitor sales performance, inventory, pending orders, and operations.</li>
+            <li>Analyzed existing codebases, fixed defects, and refactored components for performance and maintainability.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="edu-h">
+      <h2 id="edu-h">Education</h2>
+      <div class="entry">
+        <div class="when">Feb 2018 to Jul 2023</div>
+        <div>
+          <h3>B.Sc. in Computer Science and Engineering</h3>
+          <p class="org">Chittagong University of Engineering and Technology (CUET), Chattogram, Bangladesh</p>
+          <ul class="plain">
+            <li>CGPA: 3.24 / 4.00. CGPA over the final 38 credits: 3.54 / 4.00.</li>
+            <li>Class rank: 47th out of 126 students (top 37.3%).</li>
+            <li>Thesis: AR-based online shopping system for wearable products (see above).</li>
+            <li>Active in competitive programming, open-source projects, programming and idea-generation contests, and workshops on startup ideation and entrepreneurship.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-h">
+      <h2 id="skills-h">Skills</h2>
+      <dl class="skills">
+        <dt>Programming languages</dt><dd>C, C++, Kotlin, Java, Swift, Dart, Python, JavaScript, Go</dd>
+        <dt>Mobile development</dt><dd>Native Android, Android SDK, Jetpack Compose, native iOS, SwiftUI, Flutter</dd>
+        <dt>Backend and APIs</dt><dd>Node.js, Django, Spring Boot, REST APIs, WebSocket, MQTT</dd>
+        <dt>Augmented reality</dt><dd>Unity3D, Google ARCore SDK, AR Foundation, ARCore Augmented Faces API</dd>
+        <dt>Databases and cloud</dt><dd>SQL, Realm, Couchbase, Firebase</dd>
+        <dt>Recommendation systems</dt><dd>Hybrid recommendation, content-based filtering, user-based collaborative filtering, TF-IDF, cosine similarity, Pearson correlation</dd>
+        <dt>Testing</dt><dd>JUnit, Mockito, MockK, XCTest, flutter_test</dd>
+        <dt>DevOps</dt><dd>Docker, GitHub Actions, Jenkins, Bitrise</dd>
+        <dt>Monitoring and mapping</dt><dd>Sentry, Mapbox, geolocation services</dd>
+        <dt>Tools</dt><dd>Git, GitHub, Bitbucket, Jira</dd>
+        <dt>Language proficiency</dt><dd>English: IELTS Academic, overall band 7 (Listening 6.5, Reading 8, Writing 6, Speaking 7)</dd>
+      </dl>
+    </section>
+
+    <section id="honors" aria-labelledby="honors-h">
+      <h2 id="honors-h">Honors and achievements</h2>
+
+      <p class="sub">Scholarships</p>
+      <ul class="plain">
+        <li>Technical Scholarship, CUET, 2019 to 2023, awarded in 7 of 8 semesters.</li>
+        <li>Government Board Scholarship (General Grade), Ministry of Education, 2010 to 2015, for merit in the Primary School Certificate examination.</li>
+      </ul>
+
+      <p class="sub">Competitions</p>
+      <ul class="plain">
+        <li>2nd place among 70+ teams, Mobile App, Game and Job Festival 2023, organized by the ICT Division, Bangladesh.</li>
+        <li>Honourable Mention and top 20 among 120 teams, Student to Startup 2019, national competition hosted by the ICT Division, Government of Bangladesh.</li>
+        <li>22nd place among 70+ teams, USTC Inter-University Programming Contest (IUPC) 2020.</li>
+        <li>29th place among 120 teams, MIST Inter-University Programming Contest (IUPC) 2019.</li>
+        <li>Completed Hacktoberfest 2020 with 4 validated pull requests to public repositories.</li>
+      </ul>
+
+      <p class="sub">Competitive programming</p>
+      <ul class="plain">
+        <li>LeetCode Knight, maximum rating 1,875 (top 5 to 6%).</li>
+        <li>Codeforces Specialist, maximum rating 1,446.</li>
+        <li>CodeChef 4-star coder, maximum rating 1,879.</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <p>If you are a faculty member with an opening for a research or teaching assistant, or a recruiter with a role in mobile engineering, I would be glad to hear from you.</p>
+      <ul class="plain">
+        <li><a href="mailto:sudipta.chowdhury.anik@gmail.com">sudipta.chowdhury.anik@gmail.com</a></li>
+        <li>Phone: <a href="tel:+8801627050619">+880 1627 050619</a></li>
+        <li><a href="https://github.com/SudiptaAChy" rel="me">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/sudipta-chy" rel="me">LinkedIn</a></li>
+        <li><a href="assets/Sudipta_Chowdhury_CV.pdf">Curriculum vitae (PDF)</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; <span id="yr">2026</span> Sudipta Chowdhury
+    </footer>
+  </main>
+</div>
+
+<script>
+  // Keeps the footer year current; the page works without it.
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
